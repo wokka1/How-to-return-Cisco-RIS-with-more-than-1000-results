@@ -1,4 +1,4 @@
-# How to return Cisco RIS with more than 1000 results
+# How to return Cisco RIS with more than 1,000 results
 
 ***This script grabs all device names from CUCM AXL, then splits them into chunks of 900, and then makes requests to RIS for each chunk in order to avoid the 1000 record limit.***
 
