@@ -50,7 +50,6 @@ for CUCM in CUCM_LIST:
             d = {}
             d["Item"] = phone.name
             phones_query.append(d)
-            continue
         else:
             d = {}
             d["Item"] = phone.name
@@ -58,7 +57,9 @@ for CUCM in CUCM_LIST:
             phone_queries.append(phones_query)
             phones_query = []
             continue
-        phone_queries.append(phones_query)
+        if phone == phone_list[-1]:
+            print "last phone"
+            phone_queries.append(phones_query)
 
 
     print len(phone_queries)
