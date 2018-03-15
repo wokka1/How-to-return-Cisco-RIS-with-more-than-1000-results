@@ -50,6 +50,7 @@ for CUCM in CUCM_LIST:
             d = {}
             d["Item"] = phone.name
             phones_query.append(d)
+            continue
         else:
             d = {}
             d["Item"] = phone.name
