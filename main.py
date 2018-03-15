@@ -19,7 +19,6 @@ WSDL = 'file:///C:/Users/you/PyCharmProjects/your-proj/network-stats/AXLAPI.wsdl
 
 '''
 USERNAME permissions - must have read permissions to CUCM AXL/SOAP on each server 
-
 '''
 
 registered = 0
@@ -57,6 +56,8 @@ for CUCM in CUCM_LIST:
             phones_query.append(d)
             phone_queries.append(phones_query)
             phones_query = []
+            continue
+        phone_queries.append(phones_query)
 
 
     print len(phone_queries)
